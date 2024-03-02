@@ -1,0 +1,68 @@
+-- WARNING: All output lines starting with a double dash are there to show you
+-- how the simulation proceeds and are NEITHER REQUIRED NOR RECOMMENDED.
+-- Schedule an ARRIVAL event for process 0 at time 0.0 ms.
+-- Schedule an ARRIVAL event for process 1 at time 100.0 ms.
+-- Next event is an ARRIVAL event for process 0 at time 0.0 ms.
+
+-- Process 0 starts at time 0.0 ms
+-- Process 0 request the CPU at time 0.0 ms for 200.0 ms.
+-- Process 0 gets the CPU at time 0.0 ms.
+-- Process 0 will release the CPU at time 200.0 ms.
+-- Schedule a core completion event for process 0 at time 200.0 ms.
+-- Next event is an ARRIVAL event for process 1 at time 100.0 ms.
+
+-- Process 1 starts at time 100.0 ms
+-- Process 1 request the CPU at time 100.0 ms for 80.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 200.0 ms.
+-- Process 0 releases the CPU at time 200.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 280.0 ms.
+-- Schedule a core completion event for process 1 at time 280.0 ms.
+-- Process 0 requests SSD access at time 200.0 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 200.0 ms.
+-- Process 0 will release the SSD at time 200.1 ms.
+-- Schedule an SSD completion event for process 0 at time 200.1 ms.
+-- Next event is an SSD completion event for process 0 at time 200.1 ms.
+-- Process 0 releases the SSD at time 200.1 ms.
+-- Process 0 request the CPU at time 200.1 ms for 30.0 ms.
+-- Process 0 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 280.0 ms.
+-- Process 1 releases the CPU at time 280.0 ms.
+-- Give the CPU to process 0 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 0 will release the CPU at time 310.0 ms.
+-- Schedule a core completion event for process 0 at time 310.0 ms.
+-- Process 1 requests SSD access at time 280.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 280.0 ms.
+-- Process 1 will release the SSD at time 280.1 ms.
+-- Schedule an SSD completion event for process 1 at time 280.1 ms.
+-- Next event is an SSD completion event for process 1 at time 280.1 ms.
+-- Process 1 releases the SSD at time 280.1 ms.
+-- Process 1 request the CPU at time 280.1 ms for 40.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 310.0 ms.
+-- Process 0 releases the CPU at time 310.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 350.0 ms.
+-- Schedule a core completion event for process 1 at time 350.0 ms.
+
+Process 0 terminates at time 310.0 ms.
+it performed 0 physical read(s), 0 in-memory read(s), and 1 physical write(s).
+Process Table:
+Process 0 is TERMINATED.
+Process 1 is RUNNING.
+
+-- Next event is a core completion event for process 1 at time 350.0 ms.
+-- Process 1 releases the CPU at time 350.0 ms.
+
+Process 1 terminates at time 350.0 ms.
+it performed 0 physical read(s), 0 in-memory read(s), and 1 physical write(s).
+Process Table:
+Process 1 is TERMINATED.
+

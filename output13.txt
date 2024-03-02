@@ -1,0 +1,612 @@
+-- WARNING: All output lines starting with a double dash are there to show you
+-- how the simulation proceeds and are NEITHER REQUIRED NOR RECOMMENDED.
+-- Schedule an ARRIVAL event for process 0 at time 0.0 ms.
+-- Schedule an ARRIVAL event for process 1 at time 100.0 ms.
+-- Schedule an ARRIVAL event for process 2 at time 300.0 ms.
+-- Next event is an ARRIVAL event for process 0 at time 0.0 ms.
+
+-- Process 0 starts at time 0.0 ms
+-- Process 0 request the CPU at time 0.0 ms for 200.0 ms.
+-- Process 0 gets the CPU at time 0.0 ms.
+-- Process 0 will release the CPU at time 200.0 ms.
+-- Schedule a core completion event for process 0 at time 200.0 ms.
+-- Next event is an ARRIVAL event for process 1 at time 100.0 ms.
+
+-- Process 1 starts at time 100.0 ms
+-- Process 1 request the CPU at time 100.0 ms for 230.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 200.0 ms.
+-- Process 0 releases the CPU at time 200.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 430.0 ms.
+-- Schedule a core completion event for process 1 at time 430.0 ms.
+-- Process 0 starts I/O request at time 200.0 ms for 200.0 ms.
+-- Process 0 will complete its I/O request at time 400.0 ms.
+-- Schedule an IO completion event for process 0 at time 400.0 ms.
+-- Next event is an ARRIVAL event for process 2 at time 300.0 ms.
+
+-- Process 2 starts at time 300.0 ms
+-- Process 2 request the CPU at time 300.0 ms for 230.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is an IO completion event for process 0 at time 400 ms.
+-- Process 0 completes its I/O step at time 400.0 ms.
+-- Process 0 request the CPU at time 400.0 ms for 50.0 ms.
+-- Process 0 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 430.0 ms.
+-- Process 1 releases the CPU at time 430.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 660.0 ms.
+-- Schedule a core completion event for process 2 at time 660.0 ms.
+-- Process 1 starts I/O request at time 430.0 ms for 200.0 ms.
+-- Process 1 will complete its I/O request at time 630.0 ms.
+-- Schedule an IO completion event for process 1 at time 630.0 ms.
+-- Next event is an IO completion event for process 1 at time 630 ms.
+-- Process 1 completes its I/O step at time 630.0 ms.
+-- Process 1 request the CPU at time 630.0 ms for 50.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 660.0 ms.
+-- Process 2 releases the CPU at time 660.0 ms.
+-- Give the CPU to process 0 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 0 will release the CPU at time 710.0 ms.
+-- Schedule a core completion event for process 0 at time 710.0 ms.
+-- Process 2 starts I/O request at time 660.0 ms for 200.0 ms.
+-- Process 2 will complete its I/O request at time 860.0 ms.
+-- Schedule an IO completion event for process 2 at time 860.0 ms.
+-- Next event is a core completion event for process 0 at time 710.0 ms.
+-- Process 0 releases the CPU at time 710.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 760.0 ms.
+-- Schedule a core completion event for process 1 at time 760.0 ms.
+-- Process 0 starts I/O request at time 710.0 ms for 1000.0 ms.
+-- Process 0 will complete its I/O request at time 1710.0 ms.
+-- Schedule an IO completion event for process 0 at time 1710.0 ms.
+-- Next event is a core completion event for process 1 at time 760.0 ms.
+-- Process 1 releases the CPU at time 760.0 ms.
+-- Process 1 starts I/O request at time 760.0 ms for 1000.0 ms.
+-- Process 1 will complete its I/O request at time 1760.0 ms.
+-- Schedule an IO completion event for process 1 at time 1760.0 ms.
+-- Next event is an IO completion event for process 2 at time 860 ms.
+-- Process 2 completes its I/O step at time 860.0 ms.
+-- Process 2 request the CPU at time 860.0 ms for 50.0 ms.
+-- Process 2 gets the CPU at time 860.0 ms.
+-- Process 2 will release the CPU at time 910.0 ms.
+-- Schedule a core completion event for process 2 at time 910.0 ms.
+-- Next event is a core completion event for process 2 at time 910.0 ms.
+-- Process 2 releases the CPU at time 910.0 ms.
+-- Process 2 starts I/O request at time 910.0 ms for 1000.0 ms.
+-- Process 2 will complete its I/O request at time 1910.0 ms.
+-- Schedule an IO completion event for process 2 at time 1910.0 ms.
+-- Next event is an IO completion event for process 0 at time 1710 ms.
+-- Process 0 completes its I/O step at time 1710.0 ms.
+-- Process 0 request the CPU at time 1710.0 ms for 200.0 ms.
+-- Process 0 gets the CPU at time 1710.0 ms.
+-- Process 0 will release the CPU at time 1910.0 ms.
+-- Schedule a core completion event for process 0 at time 1910.0 ms.
+-- Next event is an IO completion event for process 1 at time 1760 ms.
+-- Process 1 completes its I/O step at time 1760.0 ms.
+-- Process 1 request the CPU at time 1760.0 ms for 200.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 1910.0 ms.
+-- Process 0 releases the CPU at time 1910.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 2110.0 ms.
+-- Schedule a core completion event for process 1 at time 2110.0 ms.
+-- Process 0 reads 1024 bytes at time 1910.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 1024 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 3072 unread bytes.
+-- Process 0 requests SSD access at time 1910.0 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 1910.0 ms.
+-- Process 0 will release the SSD at time 1910.1 ms.
+-- Schedule an SSD completion event for process 0 at time 1910.1 ms.
+-- Next event is an IO completion event for process 2 at time 1910 ms.
+-- Process 2 completes its I/O step at time 1910.0 ms.
+-- Process 2 request the CPU at time 1910.0 ms for 200.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is an SSD completion event for process 0 at time 1910.1 ms.
+-- Process 0 releases the SSD at time 1910.1 ms.
+-- Process 0 request the CPU at time 1910.1 ms for 30.0 ms.
+-- Process 0 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 2110.0 ms.
+-- Process 1 releases the CPU at time 2110.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 2310.0 ms.
+-- Schedule a core completion event for process 2 at time 2310.0 ms.
+-- Process 1 reads 4096 bytes at time 2110.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 1 requests SSD access at time 2110.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 2110.0 ms.
+-- Process 1 will release the SSD at time 2110.1 ms.
+-- Schedule an SSD completion event for process 1 at time 2110.1 ms.
+-- Next event is an SSD completion event for process 1 at time 2110.1 ms.
+-- Process 1 releases the SSD at time 2110.1 ms.
+-- Process 1 request the CPU at time 2110.1 ms for 150.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 2310.0 ms.
+-- Process 2 releases the CPU at time 2310.0 ms.
+-- Give the CPU to process 0 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 0 will release the CPU at time 2340.0 ms.
+-- Schedule a core completion event for process 0 at time 2340.0 ms.
+-- Process 2 reads 4096 bytes at time 2310.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 2 requests SSD access at time 2310.0 ms for 0.1 ms.
+-- Process 2 is granted access to the SSD at time 2310.0 ms.
+-- Process 2 will release the SSD at time 2310.1 ms.
+-- Schedule an SSD completion event for process 2 at time 2310.1 ms.
+-- Next event is an SSD completion event for process 2 at time 2310.1 ms.
+-- Process 2 releases the SSD at time 2310.1 ms.
+-- Process 2 request the CPU at time 2310.1 ms for 150.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 2340.0 ms.
+-- Process 0 releases the CPU at time 2340.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 2490.0 ms.
+-- Schedule a core completion event for process 1 at time 2490.0 ms.
+-- Process 0 requests SSD access at time 2340.0 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 2340.0 ms.
+-- Process 0 will release the SSD at time 2340.1 ms.
+-- Schedule an SSD completion event for process 0 at time 2340.1 ms.
+-- Next event is an SSD completion event for process 0 at time 2340.1 ms.
+-- Process 0 releases the SSD at time 2340.1 ms.
+-- Process 0 request the CPU at time 2340.1 ms for 30.0 ms.
+-- Process 0 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 2490.0 ms.
+-- Process 1 releases the CPU at time 2490.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 2640.0 ms.
+-- Schedule a core completion event for process 2 at time 2640.0 ms.
+-- Process 1 requests SSD access at time 2490.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 2490.0 ms.
+-- Process 1 will release the SSD at time 2490.1 ms.
+-- Schedule an SSD completion event for process 1 at time 2490.1 ms.
+-- Next event is an SSD completion event for process 1 at time 2490.1 ms.
+-- Process 1 releases the SSD at time 2490.1 ms.
+-- Process 1 request the CPU at time 2490.1 ms for 35.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 2640.0 ms.
+-- Process 2 releases the CPU at time 2640.0 ms.
+-- Give the CPU to process 0 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 0 will release the CPU at time 2670.0 ms.
+-- Schedule a core completion event for process 0 at time 2670.0 ms.
+-- Process 2 requests SSD access at time 2640.0 ms for 0.1 ms.
+-- Process 2 is granted access to the SSD at time 2640.0 ms.
+-- Process 2 will release the SSD at time 2640.1 ms.
+-- Schedule an SSD completion event for process 2 at time 2640.1 ms.
+-- Next event is an SSD completion event for process 2 at time 2640.1 ms.
+-- Process 2 releases the SSD at time 2640.1 ms.
+-- Process 2 request the CPU at time 2640.1 ms for 35.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 2670.0 ms.
+-- Process 0 releases the CPU at time 2670.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 2705.0 ms.
+-- Schedule a core completion event for process 1 at time 2705.0 ms.
+-- Process 0 reads 1024 bytes at time 2670.0 ms.
+-- Buffer contains 3072 bytes.
+-- Process 0 reads these 1024 bytes from the buffer.
+-- Process buffer now contains 2048 unread bytes.
+-- Process 0 request the CPU at time 2670.0 ms for 30.0 ms.
+-- Process 0 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 2705.0 ms.
+-- Process 1 releases the CPU at time 2705.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 2740.0 ms.
+-- Schedule a core completion event for process 2 at time 2740.0 ms.
+-- Process 1 reads 4096 bytes at time 2705.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 1 requests SSD access at time 2705.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 2705.0 ms.
+-- Process 1 will release the SSD at time 2705.1 ms.
+-- Schedule an SSD completion event for process 1 at time 2705.1 ms.
+-- Next event is an SSD completion event for process 1 at time 2705.1 ms.
+-- Process 1 releases the SSD at time 2705.1 ms.
+-- Process 1 request the CPU at time 2705.1 ms for 120.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 2740.0 ms.
+-- Process 2 releases the CPU at time 2740.0 ms.
+-- Give the CPU to process 0 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 0 will release the CPU at time 2770.0 ms.
+-- Schedule a core completion event for process 0 at time 2770.0 ms.
+-- Process 2 reads 4096 bytes at time 2740.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 2 requests SSD access at time 2740.0 ms for 0.1 ms.
+-- Process 2 is granted access to the SSD at time 2740.0 ms.
+-- Process 2 will release the SSD at time 2740.1 ms.
+-- Schedule an SSD completion event for process 2 at time 2740.1 ms.
+-- Next event is an SSD completion event for process 2 at time 2740.1 ms.
+-- Process 2 releases the SSD at time 2740.1 ms.
+-- Process 2 request the CPU at time 2740.1 ms for 120.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 2770.0 ms.
+-- Process 0 releases the CPU at time 2770.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 2890.0 ms.
+-- Schedule a core completion event for process 1 at time 2890.0 ms.
+-- Process 0 requests SSD access at time 2770.0 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 2770.0 ms.
+-- Process 0 will release the SSD at time 2770.1 ms.
+-- Schedule an SSD completion event for process 0 at time 2770.1 ms.
+-- Next event is an SSD completion event for process 0 at time 2770.1 ms.
+-- Process 0 releases the SSD at time 2770.1 ms.
+-- Process 0 request the CPU at time 2770.1 ms for 300.0 ms.
+-- Process 0 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 2890.0 ms.
+-- Process 1 releases the CPU at time 2890.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 3010.0 ms.
+-- Schedule a core completion event for process 2 at time 3010.0 ms.
+-- Process 1 requests SSD access at time 2890.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 2890.0 ms.
+-- Process 1 will release the SSD at time 2890.1 ms.
+-- Schedule an SSD completion event for process 1 at time 2890.1 ms.
+-- Next event is an SSD completion event for process 1 at time 2890.1 ms.
+-- Process 1 releases the SSD at time 2890.1 ms.
+-- Process 1 request the CPU at time 2890.1 ms for 35.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 3010.0 ms.
+-- Process 2 releases the CPU at time 3010.0 ms.
+-- Give the CPU to process 0 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 0 will release the CPU at time 3310.0 ms.
+-- Schedule a core completion event for process 0 at time 3310.0 ms.
+-- Process 2 requests SSD access at time 3010.0 ms for 0.1 ms.
+-- Process 2 is granted access to the SSD at time 3010.0 ms.
+-- Process 2 will release the SSD at time 3010.1 ms.
+-- Schedule an SSD completion event for process 2 at time 3010.1 ms.
+-- Next event is an SSD completion event for process 2 at time 3010.1 ms.
+-- Process 2 releases the SSD at time 3010.1 ms.
+-- Process 2 request the CPU at time 3010.1 ms for 35.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 3310.0 ms.
+-- Process 0 releases the CPU at time 3310.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 3345.0 ms.
+-- Schedule a core completion event for process 1 at time 3345.0 ms.
+-- Process 0 starts I/O request at time 3310.0 ms for 200.0 ms.
+-- Process 0 will complete its I/O request at time 3510.0 ms.
+-- Schedule an IO completion event for process 0 at time 3510.0 ms.
+-- Next event is a core completion event for process 1 at time 3345.0 ms.
+-- Process 1 releases the CPU at time 3345.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 3380.0 ms.
+-- Schedule a core completion event for process 2 at time 3380.0 ms.
+-- Process 1 reads 4096 bytes at time 3345.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 1 requests SSD access at time 3345.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 3345.0 ms.
+-- Process 1 will release the SSD at time 3345.1 ms.
+-- Schedule an SSD completion event for process 1 at time 3345.1 ms.
+-- Next event is an SSD completion event for process 1 at time 3345.1 ms.
+-- Process 1 releases the SSD at time 3345.1 ms.
+-- Process 1 request the CPU at time 3345.1 ms for 120.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 3380.0 ms.
+-- Process 2 releases the CPU at time 3380.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 3500.0 ms.
+-- Schedule a core completion event for process 1 at time 3500.0 ms.
+-- Process 2 reads 4096 bytes at time 3380.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 2 requests SSD access at time 3380.0 ms for 0.1 ms.
+-- Process 2 is granted access to the SSD at time 3380.0 ms.
+-- Process 2 will release the SSD at time 3380.1 ms.
+-- Schedule an SSD completion event for process 2 at time 3380.1 ms.
+-- Next event is an SSD completion event for process 2 at time 3380.1 ms.
+-- Process 2 releases the SSD at time 3380.1 ms.
+-- Process 2 request the CPU at time 3380.1 ms for 120.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 3500.0 ms.
+-- Process 1 releases the CPU at time 3500.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 3620.0 ms.
+-- Schedule a core completion event for process 2 at time 3620.0 ms.
+-- Process 1 requests SSD access at time 3500.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 3500.0 ms.
+-- Process 1 will release the SSD at time 3500.1 ms.
+-- Schedule an SSD completion event for process 1 at time 3500.1 ms.
+-- Next event is an SSD completion event for process 1 at time 3500.1 ms.
+-- Process 1 releases the SSD at time 3500.1 ms.
+-- Process 1 request the CPU at time 3500.1 ms for 35.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is an IO completion event for process 0 at time 3510 ms.
+-- Process 0 completes its I/O step at time 3510.0 ms.
+-- Process 0 request the CPU at time 3510.0 ms for 50.0 ms.
+-- Process 0 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 3620.0 ms.
+-- Process 2 releases the CPU at time 3620.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 3655.0 ms.
+-- Schedule a core completion event for process 1 at time 3655.0 ms.
+-- Process 2 requests SSD access at time 3620.0 ms for 0.1 ms.
+-- Process 2 is granted access to the SSD at time 3620.0 ms.
+-- Process 2 will release the SSD at time 3620.1 ms.
+-- Schedule an SSD completion event for process 2 at time 3620.1 ms.
+-- Next event is an SSD completion event for process 2 at time 3620.1 ms.
+-- Process 2 releases the SSD at time 3620.1 ms.
+-- Process 2 request the CPU at time 3620.1 ms for 35.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 3655.0 ms.
+-- Process 1 releases the CPU at time 3655.0 ms.
+-- Give the CPU to process 0 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 0 will release the CPU at time 3705.0 ms.
+-- Schedule a core completion event for process 0 at time 3705.0 ms.
+-- Process 1 reads 4096 bytes at time 3655.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 1 requests SSD access at time 3655.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 3655.0 ms.
+-- Process 1 will release the SSD at time 3655.1 ms.
+-- Schedule an SSD completion event for process 1 at time 3655.1 ms.
+-- Next event is an SSD completion event for process 1 at time 3655.1 ms.
+-- Process 1 releases the SSD at time 3655.1 ms.
+-- Process 1 request the CPU at time 3655.1 ms for 120.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 2 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 0 at time 3705.0 ms.
+-- Process 0 releases the CPU at time 3705.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 3740.0 ms.
+-- Schedule a core completion event for process 2 at time 3740.0 ms.
+
+Process 0 terminates at time 3705.0 ms.
+it performed 1 physical read(s), 1 in-memory read(s), and 2 physical write(s).
+Process Table:
+Process 0 is TERMINATED.
+Process 1 is READY.
+Process 2 is RUNNING.
+
+-- Next event is a core completion event for process 2 at time 3740.0 ms.
+-- Process 2 releases the CPU at time 3740.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 3860.0 ms.
+-- Schedule a core completion event for process 1 at time 3860.0 ms.
+-- Process 2 reads 4096 bytes at time 3740.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 2 requests SSD access at time 3740.0 ms for 0.1 ms.
+-- Process 2 is granted access to the SSD at time 3740.0 ms.
+-- Process 2 will release the SSD at time 3740.1 ms.
+-- Schedule an SSD completion event for process 2 at time 3740.1 ms.
+-- Next event is an SSD completion event for process 2 at time 3740.1 ms.
+-- Process 2 releases the SSD at time 3740.1 ms.
+-- Process 2 request the CPU at time 3740.1 ms for 120.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 3860.0 ms.
+-- Process 1 releases the CPU at time 3860.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 3980.0 ms.
+-- Schedule a core completion event for process 2 at time 3980.0 ms.
+-- Process 1 requests SSD access at time 3860.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 3860.0 ms.
+-- Process 1 will release the SSD at time 3860.1 ms.
+-- Schedule an SSD completion event for process 1 at time 3860.1 ms.
+-- Next event is an SSD completion event for process 1 at time 3860.1 ms.
+-- Process 1 releases the SSD at time 3860.1 ms.
+-- Process 1 request the CPU at time 3860.1 ms for 35.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 3980.0 ms.
+-- Process 2 releases the CPU at time 3980.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 4015.0 ms.
+-- Schedule a core completion event for process 1 at time 4015.0 ms.
+-- Process 2 requests SSD access at time 3980.0 ms for 0.1 ms.
+-- Process 2 is granted access to the SSD at time 3980.0 ms.
+-- Process 2 will release the SSD at time 3980.1 ms.
+-- Schedule an SSD completion event for process 2 at time 3980.1 ms.
+-- Next event is an SSD completion event for process 2 at time 3980.1 ms.
+-- Process 2 releases the SSD at time 3980.1 ms.
+-- Process 2 request the CPU at time 3980.1 ms for 320.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 4015.0 ms.
+-- Process 1 releases the CPU at time 4015.0 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 4335.0 ms.
+-- Schedule a core completion event for process 2 at time 4335.0 ms.
+-- Process 1 reads 4096 bytes at time 4015.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 1 requests SSD access at time 4015.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 4015.0 ms.
+-- Process 1 will release the SSD at time 4015.1 ms.
+-- Schedule an SSD completion event for process 1 at time 4015.1 ms.
+-- Next event is an SSD completion event for process 1 at time 4015.1 ms.
+-- Process 1 releases the SSD at time 4015.1 ms.
+-- Process 1 request the CPU at time 4015.1 ms for 120.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 4335.0 ms.
+-- Process 2 releases the CPU at time 4335.0 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 4455.0 ms.
+-- Schedule a core completion event for process 1 at time 4455.0 ms.
+-- Process 2 starts I/O request at time 4335.0 ms for 200.0 ms.
+-- Process 2 will complete its I/O request at time 4535.0 ms.
+-- Schedule an IO completion event for process 2 at time 4535.0 ms.
+-- Next event is a core completion event for process 1 at time 4455.0 ms.
+-- Process 1 releases the CPU at time 4455.0 ms.
+-- Process 1 requests SSD access at time 4455.0 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 4455.0 ms.
+-- Process 1 will release the SSD at time 4455.1 ms.
+-- Schedule an SSD completion event for process 1 at time 4455.1 ms.
+-- Next event is an SSD completion event for process 1 at time 4455.1 ms.
+-- Process 1 releases the SSD at time 4455.1 ms.
+-- Process 1 request the CPU at time 4455.1 ms for 35.0 ms.
+-- Process 1 gets the CPU at time 4455.1 ms.
+-- Process 1 will release the CPU at time 4490.1 ms.
+-- Schedule a core completion event for process 1 at time 4490.1 ms.
+-- Next event is a core completion event for process 1 at time 4490.1 ms.
+-- Process 1 releases the CPU at time 4490.1 ms.
+-- Process 1 reads 4096 bytes at time 4490.1 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 1 requests SSD access at time 4490.1 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 4490.1 ms.
+-- Process 1 will release the SSD at time 4490.2 ms.
+-- Schedule an SSD completion event for process 1 at time 4490.2 ms.
+-- Next event is an SSD completion event for process 1 at time 4490.2 ms.
+-- Process 1 releases the SSD at time 4490.2 ms.
+-- Process 1 request the CPU at time 4490.2 ms for 120.0 ms.
+-- Process 1 gets the CPU at time 4490.2 ms.
+-- Process 1 will release the CPU at time 4610.2 ms.
+-- Schedule a core completion event for process 1 at time 4610.2 ms.
+-- Next event is an IO completion event for process 2 at time 4535 ms.
+-- Process 2 completes its I/O step at time 4535.0 ms.
+-- Process 2 request the CPU at time 4535.0 ms for 150.0 ms.
+-- Process 2 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 1 at time 4610.2 ms.
+-- Process 1 releases the CPU at time 4610.2 ms.
+-- Give the CPU to process 2 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 2 will release the CPU at time 4760.2 ms.
+-- Schedule a core completion event for process 2 at time 4760.2 ms.
+-- Process 1 requests SSD access at time 4610.2 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 4610.2 ms.
+-- Process 1 will release the SSD at time 4610.3 ms.
+-- Schedule an SSD completion event for process 1 at time 4610.3 ms.
+-- Next event is an SSD completion event for process 1 at time 4610.3 ms.
+-- Process 1 releases the SSD at time 4610.3 ms.
+-- Process 1 request the CPU at time 4610.3 ms for 35.0 ms.
+-- Process 1 must wait for the CPU.
+-- Ready queue now contains 1 process(es) waiting for the CPU.
+-- Next event is a core completion event for process 2 at time 4760.2 ms.
+-- Process 2 releases the CPU at time 4760.2 ms.
+-- Give the CPU to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for the CPU.
+-- Process 1 will release the CPU at time 4795.2 ms.
+-- Schedule a core completion event for process 1 at time 4795.2 ms.
+
+Process 2 terminates at time 4760.2 ms.
+it performed 4 physical read(s), 0 in-memory read(s), and 4 physical write(s).
+Process Table:
+Process 1 is RUNNING.
+Process 2 is TERMINATED.
+
+-- Next event is a core completion event for process 1 at time 4795.2 ms.
+-- Process 1 releases the CPU at time 4795.2 ms.
+-- Process 1 reads 4096 bytes at time 4795.2 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 4096 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 0 unread bytes.
+-- Process 1 requests SSD access at time 4795.2 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 4795.2 ms.
+-- Process 1 will release the SSD at time 4795.3 ms.
+-- Schedule an SSD completion event for process 1 at time 4795.3 ms.
+-- Next event is an SSD completion event for process 1 at time 4795.3 ms.
+-- Process 1 releases the SSD at time 4795.3 ms.
+-- Process 1 request the CPU at time 4795.3 ms for 120.0 ms.
+-- Process 1 gets the CPU at time 4795.3 ms.
+-- Process 1 will release the CPU at time 4915.3 ms.
+-- Schedule a core completion event for process 1 at time 4915.3 ms.
+-- Next event is a core completion event for process 1 at time 4915.3 ms.
+-- Process 1 releases the CPU at time 4915.3 ms.
+-- Process 1 requests SSD access at time 4915.3 ms for 0.1 ms.
+-- Process 1 is granted access to the SSD at time 4915.3 ms.
+-- Process 1 will release the SSD at time 4915.4 ms.
+-- Schedule an SSD completion event for process 1 at time 4915.4 ms.
+-- Next event is an SSD completion event for process 1 at time 4915.4 ms.
+-- Process 1 releases the SSD at time 4915.4 ms.
+-- Process 1 request the CPU at time 4915.4 ms for 340.0 ms.
+-- Process 1 gets the CPU at time 4915.4 ms.
+-- Process 1 will release the CPU at time 5255.4 ms.
+-- Schedule a core completion event for process 1 at time 5255.4 ms.
+-- Next event is a core completion event for process 1 at time 5255.4 ms.
+-- Process 1 releases the CPU at time 5255.4 ms.
+-- Process 1 starts I/O request at time 5255.4 ms for 200.0 ms.
+-- Process 1 will complete its I/O request at time 5455.4 ms.
+-- Schedule an IO completion event for process 1 at time 5455.4 ms.
+-- Next event is an IO completion event for process 1 at time 5455 ms.
+-- Process 1 completes its I/O step at time 5455.4 ms.
+-- Process 1 request the CPU at time 5455.4 ms for 50.0 ms.
+-- Process 1 gets the CPU at time 5455.4 ms.
+-- Process 1 will release the CPU at time 5505.4 ms.
+-- Schedule a core completion event for process 1 at time 5505.4 ms.
+-- Next event is a core completion event for process 1 at time 5505.4 ms.
+-- Process 1 releases the CPU at time 5505.4 ms.
+
+Process 1 terminates at time 5505.4 ms.
+it performed 7 physical read(s), 0 in-memory read(s), and 7 physical write(s).
+Process Table:
+Process 1 is TERMINATED.
+

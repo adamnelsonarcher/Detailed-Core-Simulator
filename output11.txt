@@ -1,0 +1,192 @@
+-- WARNING: All output lines starting with a double dash are there to show you
+-- how the simulation proceeds and are NEITHER REQUIRED NOR RECOMMENDED.
+-- Schedule an ARRIVAL event for process 0 at time 40.0 ms.
+-- Next event is an ARRIVAL event for process 0 at time 40.0 ms.
+
+-- Process 0 starts at time 40.0 ms
+-- Process 0 request the CPU at time 40.0 ms for 300.0 ms.
+-- Process 0 gets the CPU at time 40.0 ms.
+-- Process 0 will release the CPU at time 340.0 ms.
+-- Schedule a core completion event for process 0 at time 340.0 ms.
+-- Next event is a core completion event for process 0 at time 340.0 ms.
+-- Process 0 releases the CPU at time 340.0 ms.
+-- Process 0 starts I/O request at time 340.0 ms for 100.0 ms.
+-- Process 0 will complete its I/O request at time 440.0 ms.
+-- Schedule an IO completion event for process 0 at time 440.0 ms.
+-- Next event is an IO completion event for process 0 at time 440 ms.
+-- Process 0 completes its I/O step at time 440.0 ms.
+-- Process 0 request the CPU at time 440.0 ms for 10.0 ms.
+-- Process 0 gets the CPU at time 440.0 ms.
+-- Process 0 will release the CPU at time 450.0 ms.
+-- Schedule a core completion event for process 0 at time 450.0 ms.
+-- Next event is a core completion event for process 0 at time 450.0 ms.
+-- Process 0 releases the CPU at time 450.0 ms.
+-- Process 0 starts I/O request at time 450.0 ms for 900.0 ms.
+-- Process 0 will complete its I/O request at time 1350.0 ms.
+-- Schedule an IO completion event for process 0 at time 1350.0 ms.
+-- Next event is an IO completion event for process 0 at time 1350 ms.
+-- Process 0 completes its I/O step at time 1350.0 ms.
+-- Process 0 request the CPU at time 1350.0 ms for 200.0 ms.
+-- Process 0 gets the CPU at time 1350.0 ms.
+-- Process 0 will release the CPU at time 1550.0 ms.
+-- Schedule a core completion event for process 0 at time 1550.0 ms.
+-- Next event is a core completion event for process 0 at time 1550.0 ms.
+-- Process 0 releases the CPU at time 1550.0 ms.
+-- Process 0 reads 2048 bytes at time 1550.0 ms.
+-- Buffer contains 0 bytes.
+-- Must bring in at least 2048 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 2048 unread bytes.
+-- Process 0 requests SSD access at time 1550.0 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 1550.0 ms.
+-- Process 0 will release the SSD at time 1550.1 ms.
+-- Schedule an SSD completion event for process 0 at time 1550.1 ms.
+-- Next event is an SSD completion event for process 0 at time 1550.1 ms.
+-- Process 0 releases the SSD at time 1550.1 ms.
+-- Process 0 request the CPU at time 1550.1 ms for 30.0 ms.
+-- Process 0 gets the CPU at time 1550.1 ms.
+-- Process 0 will release the CPU at time 1580.1 ms.
+-- Schedule a core completion event for process 0 at time 1580.1 ms.
+-- Next event is a core completion event for process 0 at time 1580.1 ms.
+-- Process 0 releases the CPU at time 1580.1 ms.
+-- Process 0 reads 1024 bytes at time 1580.1 ms.
+-- Buffer contains 2048 bytes.
+-- Process 0 reads these 1024 bytes from the buffer.
+-- Process buffer now contains 1024 unread bytes.
+-- Process 0 request the CPU at time 1580.1 ms for 50.0 ms.
+-- Process 0 gets the CPU at time 1580.1 ms.
+-- Process 0 will release the CPU at time 1630.1 ms.
+-- Schedule a core completion event for process 0 at time 1630.1 ms.
+-- Next event is a core completion event for process 0 at time 1630.1 ms.
+-- Process 0 releases the CPU at time 1630.1 ms.
+-- Process 0 reads 2048 bytes at time 1630.1 ms.
+-- Buffer contains 1024 bytes.
+-- Process 0 can only read 1024 bytes from the buffer.
+-- Must bring in at least 1024 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 3072 unread bytes.
+-- Process 0 requests SSD access at time 1630.1 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 1630.1 ms.
+-- Process 0 will release the SSD at time 1630.2 ms.
+-- Schedule an SSD completion event for process 0 at time 1630.2 ms.
+-- Next event is an SSD completion event for process 0 at time 1630.2 ms.
+-- Process 0 releases the SSD at time 1630.2 ms.
+-- Process 0 request the CPU at time 1630.2 ms for 40.0 ms.
+-- Process 0 gets the CPU at time 1630.2 ms.
+-- Process 0 will release the CPU at time 1670.2 ms.
+-- Schedule a core completion event for process 0 at time 1670.2 ms.
+-- Next event is a core completion event for process 0 at time 1670.2 ms.
+-- Process 0 releases the CPU at time 1670.2 ms.
+-- Process 0 reads 1024 bytes at time 1670.2 ms.
+-- Buffer contains 3072 bytes.
+-- Process 0 reads these 1024 bytes from the buffer.
+-- Process buffer now contains 2048 unread bytes.
+-- Process 0 request the CPU at time 1670.2 ms for 30.0 ms.
+-- Process 0 gets the CPU at time 1670.2 ms.
+-- Process 0 will release the CPU at time 1700.2 ms.
+-- Schedule a core completion event for process 0 at time 1700.2 ms.
+-- Next event is a core completion event for process 0 at time 1700.2 ms.
+-- Process 0 releases the CPU at time 1700.2 ms.
+-- Process 0 reads 1024 bytes at time 1700.2 ms.
+-- Buffer contains 2048 bytes.
+-- Process 0 reads these 1024 bytes from the buffer.
+-- Process buffer now contains 1024 unread bytes.
+-- Process 0 request the CPU at time 1700.2 ms for 50.0 ms.
+-- Process 0 gets the CPU at time 1700.2 ms.
+-- Process 0 will release the CPU at time 1750.2 ms.
+-- Schedule a core completion event for process 0 at time 1750.2 ms.
+-- Next event is a core completion event for process 0 at time 1750.2 ms.
+-- Process 0 releases the CPU at time 1750.2 ms.
+-- Process 0 reads 2048 bytes at time 1750.2 ms.
+-- Buffer contains 1024 bytes.
+-- Process 0 can only read 1024 bytes from the buffer.
+-- Must bring in at least 1024 bytes from the SSD.
+-- Will actually bring in 4096 bytes.
+-- Process buffer now contains 3072 unread bytes.
+-- Process 0 requests SSD access at time 1750.2 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 1750.2 ms.
+-- Process 0 will release the SSD at time 1750.3 ms.
+-- Schedule an SSD completion event for process 0 at time 1750.3 ms.
+-- Next event is an SSD completion event for process 0 at time 1750.3 ms.
+-- Process 0 releases the SSD at time 1750.3 ms.
+-- Process 0 request the CPU at time 1750.3 ms for 40.0 ms.
+-- Process 0 gets the CPU at time 1750.3 ms.
+-- Process 0 will release the CPU at time 1790.3 ms.
+-- Schedule a core completion event for process 0 at time 1790.3 ms.
+-- Next event is a core completion event for process 0 at time 1790.3 ms.
+-- Process 0 releases the CPU at time 1790.3 ms.
+-- Process 0 reads 1024 bytes at time 1790.3 ms.
+-- Buffer contains 3072 bytes.
+-- Process 0 reads these 1024 bytes from the buffer.
+-- Process buffer now contains 2048 unread bytes.
+-- Process 0 request the CPU at time 1790.3 ms for 200.0 ms.
+-- Process 0 gets the CPU at time 1790.3 ms.
+-- Process 0 will release the CPU at time 1990.3 ms.
+-- Schedule a core completion event for process 0 at time 1990.3 ms.
+-- Next event is a core completion event for process 0 at time 1990.3 ms.
+-- Process 0 releases the CPU at time 1990.3 ms.
+-- Process 0 requests SSD access at time 1990.3 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 1990.3 ms.
+-- Process 0 will release the SSD at time 1990.4 ms.
+-- Schedule an SSD completion event for process 0 at time 1990.4 ms.
+-- Next event is an SSD completion event for process 0 at time 1990.4 ms.
+-- Process 0 releases the SSD at time 1990.4 ms.
+-- Process 0 request the CPU at time 1990.4 ms for 50.0 ms.
+-- Process 0 gets the CPU at time 1990.4 ms.
+-- Process 0 will release the CPU at time 2040.4 ms.
+-- Schedule a core completion event for process 0 at time 2040.4 ms.
+-- Next event is a core completion event for process 0 at time 2040.4 ms.
+-- Process 0 releases the CPU at time 2040.4 ms.
+-- Process 0 requests SSD access at time 2040.4 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 2040.4 ms.
+-- Process 0 will release the SSD at time 2040.5 ms.
+-- Schedule an SSD completion event for process 0 at time 2040.5 ms.
+-- Next event is an SSD completion event for process 0 at time 2040.5 ms.
+-- Process 0 releases the SSD at time 2040.5 ms.
+-- Process 0 request the CPU at time 2040.5 ms for 40.0 ms.
+-- Process 0 gets the CPU at time 2040.5 ms.
+-- Process 0 will release the CPU at time 2080.5 ms.
+-- Schedule a core completion event for process 0 at time 2080.5 ms.
+-- Next event is a core completion event for process 0 at time 2080.5 ms.
+-- Process 0 releases the CPU at time 2080.5 ms.
+-- Process 0 requests SSD access at time 2080.5 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 2080.5 ms.
+-- Process 0 will release the SSD at time 2080.6 ms.
+-- Schedule an SSD completion event for process 0 at time 2080.6 ms.
+-- Next event is an SSD completion event for process 0 at time 2080.6 ms.
+-- Process 0 releases the SSD at time 2080.6 ms.
+-- Process 0 request the CPU at time 2080.6 ms for 50.0 ms.
+-- Process 0 gets the CPU at time 2080.6 ms.
+-- Process 0 will release the CPU at time 2130.6 ms.
+-- Schedule a core completion event for process 0 at time 2130.6 ms.
+-- Next event is a core completion event for process 0 at time 2130.6 ms.
+-- Process 0 releases the CPU at time 2130.6 ms.
+-- Process 0 requests SSD access at time 2130.6 ms for 0.1 ms.
+-- Process 0 is granted access to the SSD at time 2130.6 ms.
+-- Process 0 will release the SSD at time 2130.7 ms.
+-- Schedule an SSD completion event for process 0 at time 2130.7 ms.
+-- Next event is an SSD completion event for process 0 at time 2130.7 ms.
+-- Process 0 releases the SSD at time 2130.7 ms.
+-- Process 0 request the CPU at time 2130.7 ms for 240.0 ms.
+-- Process 0 gets the CPU at time 2130.7 ms.
+-- Process 0 will release the CPU at time 2370.7 ms.
+-- Schedule a core completion event for process 0 at time 2370.7 ms.
+-- Next event is a core completion event for process 0 at time 2370.7 ms.
+-- Process 0 releases the CPU at time 2370.7 ms.
+-- Process 0 starts I/O request at time 2370.7 ms for 100.0 ms.
+-- Process 0 will complete its I/O request at time 2470.7 ms.
+-- Schedule an IO completion event for process 0 at time 2470.7 ms.
+-- Next event is an IO completion event for process 0 at time 2470 ms.
+-- Process 0 completes its I/O step at time 2470.7 ms.
+-- Process 0 request the CPU at time 2470.7 ms for 100.0 ms.
+-- Process 0 gets the CPU at time 2470.7 ms.
+-- Process 0 will release the CPU at time 2570.7 ms.
+-- Schedule a core completion event for process 0 at time 2570.7 ms.
+-- Next event is a core completion event for process 0 at time 2570.7 ms.
+-- Process 0 releases the CPU at time 2570.7 ms.
+
+Process 0 terminates at time 2570.7 ms.
+it performed 3 physical read(s), 4 in-memory read(s), and 4 physical write(s).
+Process Table:
+Process 0 is TERMINATED.
+
